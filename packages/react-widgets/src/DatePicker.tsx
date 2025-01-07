@@ -468,7 +468,7 @@ const DatePicker = React.forwardRef(
 
       notify(onSelect, [dateTime, dateStr])
       handleChange(dateTime, dateStr, true)
-      ref.current?.focus()
+      ref.current?.blur()
     })
 
     const handleTimeChange = useEventCallback((date) => {
